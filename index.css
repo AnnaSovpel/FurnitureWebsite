@@ -1,0 +1,1612 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./ttf/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(./ttf/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Crismon;
+    src: url(./ttf/CrimsonText-Roman.ttf);
+}
+@font-face {
+    font-family: Palatino;
+    src: url(./ttf/Palatino\ Linotype.ttf);
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #383642;
+}
+header {
+    font-family: Montserrat;
+    color: #383642;
+    position:relative;
+    z-index: 3;
+}
+.header {
+    position: fixed;
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+.header-nav {
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.header-nav__flex {
+    display: flex;
+}
+.header-nav:hover {
+    color: #141418;
+}
+.header-img-mts {
+    height: 14px; 
+    width: 38px;
+}
+.header-img-vk {
+    height: 22px; 
+    width: 22px;
+    padding-right: 5px; 
+    cursor: pointer;
+}
+.header-img-inst {
+    height: 19px; 
+    width: 19px;
+    padding-right: 5px; 
+    cursor: pointer;
+}
+.header-img-facebook {
+    height: 18px; 
+    width: 8px;
+    cursor: pointer;
+}
+.nav-height {
+    height: 35px;
+}
+
+                    /* BLOCK DESIGNER FURNITURE */
+
+.designer-furniture-block-background {
+    background-image: url(./img/Rectangle\ 82.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+}
+.designer-furniture-general-block {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 610px;
+    padding: 30px;
+}
+.designer-furniture-left-block {
+    width: 40%;
+}
+.designer-furniture-left-block-item {
+    font-family: Crismon;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 60px;
+    height: 120px;
+    width: 100%;
+    line-height: 60px;
+}
+.designer-furniture-left-block-under-item {
+    font-family: Crismon;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 28px;
+    height: 35px;
+    width: 100%;
+}
+.designer-furniture-left-block-underline {
+    border-bottom: 0.7px solid #707070;
+    height: 15px;
+    padding-bottom: 10px;
+}
+.designer-furniture-left-block-ul {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 18px;
+    width: 70%;
+}
+.designer-furniture-lef-ul > li {
+    padding: 10px 0px;
+}
+.span-color {
+    font-weight: 800;
+    color: #FBD1AD;
+}
+.designer-furniture-right-block {
+    font-family: Montserrat;
+    height: 445px; 
+    width: 445px; 
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    margin-left: 15px;
+    color: #383642;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.designer-furniture-right-block-item {
+    font-size: 24px;
+    font-weight: 600;
+    height: 72px;
+    line-height: 36px;
+    text-align: center;
+}
+.designer-furniture-right-block-under-item {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.designer-furniture-right-block__for-input {
+    width: 90%;
+}
+.designer-furniture-right-block-input {
+    font-family: Montserrat;
+    width: 100%;
+    height: 60px;
+    background: #B6B4B4;
+    border: 1px solid #8F8F8F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin: 10px 0px;
+}
+.designer-furniture-right-block-btn {
+    width: 100%;
+    height: 60px;
+    background-color: #383642;
+    color: #FFFFFF;
+    margin: 15px 0px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+.designer-furniture-right-block-btn:hover {
+    background-color: #141418;
+}
+.span-weight {
+    font-family: Montserrat-bold;
+}
+textarea:focus, input:focus{
+    outline: none;
+    font-family: Montserrat;
+}
+
+                    /* бургер-меню */
+.burger{
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+}
+.burger-container {
+    background:#B6B4B4;
+    top: 0; 
+    bottom: 0; 
+    right: 0;
+    width: 50%; 
+    position: fixed;
+    display: none;
+    animation: showBlock 1s linear forwards;
+}
+.burger-cotainer-block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.burger-cotainer-block-table > a {
+    font-size: 25px; 
+    border-bottom: 2px solid white; 
+    height: 70px; 
+    width:90%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+}
+.burger-container__display {
+    display: block;
+}
+.burger span, .burger span:before, .burger span:after{
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    background:rgb(172, 172, 172);
+    display: block;
+    transition: .3s;
+    border-radius: 5px;
+    z-index: 2;
+}
+.burger span:before{
+    content: "";
+    top: -20px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span{
+    top: 20px;
+}
+.burger span:after{
+    content: "";
+    bottom: -20px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span.active:before{
+    content: "";
+    top: 0px;
+    transform: rotate(45deg);
+    transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active:after{
+    content: "";
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active{
+    background: rgba(255, 255, 255, 0); 
+}
+                    /* SWIPER SALES */
+.sales-block {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Crismon;
+}
+.sales-item {
+    color: black; 
+    font-size: 36px;
+}
+.sales-under-item {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    width: 317px;
+    line-height: 20px;
+}
+.sales-under-item__weight {
+    font-weight: 600;
+}
+.sales-item__width-sales {
+    width: 40%;
+}
+.sales-item__width {
+    width: 445px;
+}
+.sales-block-underline {
+    background: #FBD1AD;
+    height: 4px;
+    width: 132px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.slider {
+    position: relative;
+    width: 99%;
+    height: 300px;
+    user-select: none;
+    touch-action: pan-y;
+    border: 2px solid white;
+}
+.slider-list {
+    width: 99%;
+    height: 300px;
+    overflow: hidden;
+}
+.slide-picture__width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-picture__width-100 {
+    width: 80%;
+}
+.slider-list.grab {
+    cursor: grab;
+}
+.slider-list.grabbing{
+    cursor: grabbing;
+}
+.slider-track {
+    display: flex;
+}
+.slide {
+    width: 99%;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-picture__margin {
+    margin-left: 20px;
+}
+.slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    top: 170px;
+}
+.next,
+.prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+
+                    /* КАТАЛОГ МЕБЕЛИ */
+.catalog-under-item {
+    width: 500px;
+}
+.catalog-main-flex-container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 30px;
+}
+.catalog-main-flex-container__width {
+    width: 40%;
+}
+.catalog-main-flex-container__width-2-block {
+    width: 445px;
+}
+.catalog-main-container-kitchen {
+    width: 100%;  
+    height: 445px; 
+    background-image: url(./img/kitchen.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color:#EEEEEE; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+.catalog-main-container-bedroom {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.catalog-main-container-bedroom-child {
+    background: #EEEEEE;
+    border-radius: 5px;
+    height: 520px; 
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.catalog-main-container-bedroom-child-img {
+    width: 70%;
+}
+.catalog-main-container-bedroom-bed-img {
+    width: 100%; 
+    height: 250px;
+}
+.catalog-main-container-wardrope-and-chair {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 15px;
+}
+.catalog-main-container-bedroom-child-img__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalog-main-container-wardrope {
+    background: #EEEEEE;
+    border-radius: 5px;
+    height: 635px; 
+    width: 80%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    cursor: pointer;
+}
+.catalog-main-container-wardrope-img {
+    width: 90%; 
+}
+.catalog-main-container-chair {
+    height: 330px; 
+    width: 80%; 
+    margin-top: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    background: #EEEEEE;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.catalog-main-container-office-chair-img {
+    width: 30%;
+}
+.catalog-main-container-chair__flex {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 55px;
+}
+
+                    /* CONTAINER BIG WARDROPE, CUTTING AND LIVING ROOM */
+.catalog-main-container-big-wardrope-and-cut {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 15px;
+}
+.catalog-main-container-big-wardrope-width {
+    width: 40%; 
+    height: 200px;
+}
+.catalog-big-wardrope-container {
+    width: 60%; 
+    height: 505px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color:#EEEEEE;
+    cursor: pointer;
+}
+.catalog-big-wardrope-container-img {
+    width: 98%;
+}
+.catalog-main-wardrope-container-img {
+    width: 90%;
+}
+.catalog-cutting-container__position {
+    width: 445px; 
+    height: 505px; 
+    position: relative; 
+    z-index: 2; 
+    right: 190px;
+}
+.catalog-cutting-container {
+    height: 245px; 
+    width: 550px; 
+    background-color:#EEEEEE; 
+    display: flex; 
+    justify-content: space-between;
+    cursor: pointer;
+}
+.catalog-cutting-container__margin-top {
+    margin-top: 15px;
+}
+.catalog-main-wardrope-cutting-img {
+    width: 90%;
+}
+                    /* ТЕКСТ ДЛЯ КАТАЛОГА */
+.catalog-item {
+    font-family: Crismon;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 35px 25px 10px;
+}
+.catalog-description {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    width: 50%;
+    padding: 0px 25px;
+}
+.catalog-item-child-wardrope__padding {
+    padding: 50px 30px;
+}
+.catalog-item-child-wardrope {
+    font-family: Crismon;
+    font-size: 40px;
+    font-weight: 400;
+}
+.catalog-description-child-wardrope{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+.catalog-item-chair {
+    font-family: Crismon;
+    font-size: 40px;
+    font-weight: 400;
+    width: 30%;
+    padding: 30px 20px 0px;
+}
+
+                    /* КНОПКИ ДЛЯ КАТАЛОГА */
+.catalog-button-kitchen-appear {
+    opacity: 0;
+    height: 50%;
+    align-items: flex-end;
+    transition: 1s;
+    display: flex;
+    align-items: flex-end;
+}
+.catalog-button-kitchen {
+    margin-left: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    width: 200px;
+    height: 51px;
+    background: #383642;
+    border-radius: 3px;
+    color: #FFFFFF;
+    border: none;
+}
+.catalog-button-kitchen:hover {
+    background: #383642c2;
+    box-shadow: 0 15px 20px rgba(51, 63, 58, 0.4);
+    color: white;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.catalog-button-child-bedroom-appear {
+    opacity: 0;
+    transition: 1s;
+}
+.catalog-button-child-bedrrom {
+    margin-left: 0px;
+    margin-top: 25px;
+}
+.catalog-button-bedroom-appear {
+    opacity: 0;
+    transition: 1s;
+}
+.catalog-button-wrdrope-appear {
+    opacity: 0;
+    transition: 1s;
+}
+.catalog-button-office-chair-appear {
+    opacity: 0;
+    transition: 1s;
+}
+.catalog-button-office-chair {
+    margin: 20px;
+}
+.catalog-button-big-wardrope-appear {
+    opacity: 0;
+    transition: 1s;
+}
+.catalog-button-cutting-appear {
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+}
+.catalog-button-cutting {
+    margin-left: 0;
+}
+.catalog-button-living-room-appear {
+    opacity: 0;
+    transition: 1s;
+}
+
+                    /* BLOCK ABOUT RESPONSIBILITY */
+.block-responsibility {
+    margin-top: 30px;
+    background-image: url(./img/responsibility.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
+.block-responsibility-general-for-one-two {
+    display: flex; 
+    justify-content: center;
+    padding-top: 20px;
+}    
+.block-responsibility-one {
+    width: 40%;
+}     
+.block-responsibility-one-item {
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFFFFF;
+} 
+.block-responsibility-one-under-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #EFEFEF;
+} 
+.block-responsibility-two {
+    width: 445px;
+} 
+.block-responsibility-square {
+    display: flex;
+    justify-content: center;
+} 
+.block-responsibility-square-width > div {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    width: 25%; 
+    height: 190px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.block-responsibility-square__flex {
+    display: flex;
+}
+.block-responsibility-square-number {
+    width: 33px;
+    height: 33px;
+    border: 2px solid #FBD1AD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FBD1AD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0 30px;
+}
+.block-responsibility-square-item {
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: #FBD1AD;
+    padding: 30px 0 0 15px;
+}
+.block-responsibility-square-description {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+                    /* BLOCK ABOUT US */
+.block-about-us {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.block-about-us-one {
+    width: 40%;
+}
+.block-about-us-one-item {
+    font-family: Crismon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+}
+.block-about-us-one-under-item {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2A28;
+}
+.block-about-us-one-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2A28;
+    padding-top: 30px;
+}
+.block-about-us-one-button {
+    margin: 20px 0px;
+}
+.block-about-us-one-picture-flex-container {
+    display: flex;
+}
+.block-about-us-one-square {
+    z-index: 2;
+}
+.block-about-us-one-square-drscription {
+    width: 350px;
+    height: 232px;
+    left: 974.91px;
+    top: 4679.6px;
+    background: linear-gradient(0deg, #D8D8D8, #D8D8D8);
+    margin-left: 30px;
+    font-family: Crismon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #040404;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.block-about-us-one-img {
+    width: 85%;
+}
+.block-about-us-two {
+    width: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.block-about-us-two-img-width {
+    width: 70%;
+}
+.block-about-us-two-img-height {
+    height: 450px;
+}
+.block-about-us-underine {
+    margin-bottom: 50px;
+}
+                    /* BLOCK WHY US */
+.block-why-us-backgound {
+    background: #F8F8F8;
+}
+.block-why-us__margin-top {
+    margin-top: 60px;
+}
+.block-why-us-item {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    margin-top: 30px;
+}
+.block-why-us-ul-flex-container > div{
+    display: flex;
+    margin: 15px 0;
+}
+.block-why-us-ul-flex-container-circle__width {
+    width: 15px; 
+    padding-top: 4px;
+}
+.block-why-us-ul-flex-container-circle {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background: #FBD1AD;
+}
+.block-why-us-ul-flex-container-circle-text {
+    width: 90%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #2B2A28;
+}
+.block-why-us-two-flex-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.block-why-us-two-flex-container-img-width {
+    width: 445px;
+}
+
+                    /* SWIPER ОТЗЫВЫ  */
+.slider-1 {
+    position: relative;
+    width: 99%;
+    height: 600px;
+    user-select: none;
+    touch-action: pan-y;
+    border: 2px solid white;
+}
+.slider-list-1 {
+    width: 99%;
+    height: 600px;
+    overflow: hidden;
+}
+.slider-list-1-grab{
+    cursor: grab;
+}
+.slider-list-1-grabbing{
+    cursor: grabbing;
+}
+.slider-track-1 {
+    display: flex;
+}
+.slide-1 {
+    width: 99%;
+    height: 600px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider-arrows-1 {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    top: 290px;
+}
+.next-1,
+.prev-1 {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.next-1.disabled,
+.prev-1.disabled{
+    opacity: .25;
+    pointer-events: none;
+}
+.slide-1-block-review {
+    height: 580px;
+    width: 25%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.slide-1-block-review__margin {
+    margin-right: 20px;
+}
+.slide-1-block-name {
+    font-family: Crismon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: #000000;
+    padding: 30px 20px 10px
+}
+.slide-1-block-furniture-name {
+    padding-left: 20px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+}
+.slide-1-block-date {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #383642;
+    padding: 10px 20px 10px;
+}
+.slide-1-block-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #2B2A28;
+    padding-left: 20px;
+}
+.slide-1-block-picture-position {
+    position: absolute; 
+    bottom: 0;
+    width: 25%;
+}
+.slide-1-block-picture-width {
+    width: 99%;
+}
+.slide-1-block-display {
+    display: block;
+}
+.button-review__flex-container {
+    display: flex;
+    justify-content: center;
+}
+.button-review {
+    margin-top: 60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    width: 200px;
+    height: 51px;
+    background: #383642;
+    border-radius: 3px;
+    color: #FFFFFF;
+    border: none;
+}
+.button-review:hover {
+    background: #383642c2;
+    box-shadow: 0 15px 20px rgba(51, 63, 58, 0.4);
+    color: white;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #D8D8D8;
+    margin-top: 30px;
+    height: 350px;
+}
+.footer-1-block {
+    width: 30%;
+    padding-top: 30px;
+}
+.footer-1-block-item {
+    font-family: Crismon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2B2A28;
+    width: 40%;
+}
+.footer-1-block-under-item {
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #2B2A28;
+    margin-top: 10px;
+}
+.footer-1-block-under-item-2 {
+    font-family: Palatino;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    margin: 20px 0;
+}
+.footer-1-block-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #606060;
+    margin: 5px 0;
+    width: 80%;
+}
+.footer-2-block {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.footer-2-block-item > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #2B2A28;
+}
+.footer-2-block-adaptiv {
+    display: none;
+}
+
+@media (min-width: 1730px){
+    .catalog-cutting-container__position {
+        right: 220px;
+    }
+    .catalog-cutting-container {
+        width: 580px;
+    }
+    .catalog-main-container-bedroom-child__margin {
+        margin-left: 40px;
+    }
+    .catalog-main-container-wardrope-and-chair {
+        margin-left: 40px;
+    }
+    .block-about-us-one-square-drscription {
+        width: 450px;
+    }
+}
+@media (min-width: 1500px){
+    .catalog-big-wardrope-container {
+        width: 65%;
+    }
+    .catalog-main-wardrope-container-img {
+        width: 65%;
+    }
+    .block-responsibility-one-item {
+        font-size: 36px;
+    }
+}
+/* @media (max-width: 1320px){
+    .catalog-main-wardrope-container-img {
+        width: 95%;
+    }
+} */
+@media (max-width: 1280px){
+    .catalog-cutting-container__position {
+        right: 180px;
+    }
+    .catalog-cutting-container {
+        width: 540px;
+    }
+}
+@media (max-width: 1201px){
+    .slide-picture__width-100 {
+        width: 100%;
+    }
+    .slide-picture__width {
+       display: block;
+    }
+}
+@media (max-width: 1200px){
+    .slider{
+        height: 600px;
+    }
+    .slider-list {
+        height: 600px;
+    }
+    .slide {
+        height: 600px;
+        flex-direction: column;
+    }
+    .slide-picture__margin {
+        margin: 10px 0px;
+    }
+    .slider-arrows {
+        top: 310px;
+    }
+    .catalog-main-flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .catalog-main-flex-container__width {
+        width: 99%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .catalog-main-container-kitchen {
+        width: 50%;
+    }
+    .catalog-main-container-bedroom{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-top: 0px;
+    }
+    .catalog-main-container-bedroom-child {
+        width: 99%;
+        margin-top: 15px;
+    }
+    .catalog-main-container-bedroom-child-img {
+        width: 50%;
+    }
+    .catalog-main-container-bedroom-bed-img {
+       height: 60%;
+    }
+    .catalog-main-flex-container__width-2-block {
+        width: 99%;
+    }
+    .catalog-main-container-wardrope-and-chair {
+        align-items: center;
+        margin-left: 0;
+    }
+    .catalog-main-container-wardrope-img {
+        width: 55%;
+    }
+    .catalog-main-container-wardrope {
+        width: 50%;
+        margin: 15px 0px;
+    }
+    .catalog-main-container-chair {
+        margin: 0;
+        width: 50%;
+    }
+    .catalog-main-container-big-wardrope-and-cut {
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog-main-container-big-wardrope-width {
+        width: 100%;
+    }
+    .catalog-cutting-container__position {
+        position: static;
+        width: 50%;
+        margin-top: 15px;
+    }
+    .catalog-main-container-big-wardrope-width {
+        height: 600px;
+        width: 50%;
+    }
+    .catalog-big-wardrope-container {
+        width: 100%;
+        height: 100%;
+    }
+    .catalog-main-wardrope-container-img {
+        width: 80%;
+    }
+    .catalog-cutting-container {
+        width: 100%;
+    }
+    .catalog-main-container-chair__flex {
+        position: relative;
+        bottom: 150px;
+    }
+    .catalog-main-container-office-chair-img {
+        width: 25%;
+    }
+/* BLOCK ABOUT RESPONSIBILITY */
+    .block-responsibility-general-for-one-two {
+        flex-direction: column;
+    }
+    .block-responsibility-one {
+        width: 99%;
+        text-align: center;
+    }
+    .block-responsibility-one-item {
+        font-size: 30px;
+    }
+    .sales-block-underline__center__responsibility {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block-responsibility-square {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-responsibility-square-width > div {
+        width: 50%;
+    }
+    .block-responsibility-square{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 1120px){
+    .designer-furniture-left-block-under-item{
+        height: 70px;
+    }
+    .designer-furniture-left-block-item {
+        font-size: 50px;
+    }
+    .designer-furniture-left-block-underline {
+        border: none;
+    }
+    .catalog-main-wardrope-cutting-img {
+        width: 95%;
+    }
+    .catalog-main-container-bedroom-bed-img {
+        width: 80%;
+    }
+}
+@media (max-width: 950px){
+    .header{
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+/* BLOCK ABOUT US */
+    .block-about-us {
+        flex-direction: column;
+    }
+    .block-about-us-one {
+        width: 100%;
+        text-align: center;
+    }
+    .block-about-us-one-under-item {
+        text-align: center;
+    }
+    .block-about-us-two {
+        display: none;
+    }
+    .block-about-us-one-picture-flex-container {
+        flex-direction: column;
+    }
+    .block-about-us-one-img {
+        display: none;
+    }
+    .block-about-us-one-square {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .block-about-us-one-square-drscription {
+        margin: 0;
+    }
+    .block-about-us-one-text {
+        padding: 10px;
+        text-align: center;
+    }
+    .block-why-us-item {
+        padding: 10px;
+    }
+    .block-why-us-ul-flex-container-circle-text {
+        width: 100%;
+        text-align: left;
+    }
+    .block-why-us-ul-flex-container-circle__width {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .block-why-us__margin-top {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 880px){
+    .designer-furniture-block-background {
+        height: 100%;
+    }
+    .designer-furniture-general-block{
+        flex-direction: column;
+        height: 100%;
+    }
+    .designer-furniture-left-block {
+        width: 100%;
+    }
+    .designer-furniture-left-block-item {
+        width: 100%; 
+        height: 80px;
+        text-align: center;
+    }
+    .designer-furniture-left-block-under-item {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    .designer-furniture-left-block-ul {
+        width: 80%;
+    }
+    .sales-block {
+        flex-direction: column;
+    }
+    .sales-item__width-sales {
+        width: 100%;
+        text-align: center;
+    }
+    .sales-under-item {
+        width: 100%;
+        text-align: center;
+    }  
+    .designer-furniture-left-block-underline {
+        border-bottom: 0.7px solid #707070;
+    }
+    .sales-block-underline__center {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-main-container-bedroom-child {
+        height: 460px;
+    }
+    .catalog-main-container-wardrope {
+        height: 510px;
+    }
+    .catalog-main-container-big-wardrope-width {
+        height: 460px;
+    }
+    .catalog-big-wardrope-container {
+        height: 460px;
+    }
+    .catalog-item-chair {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    
+    .catalog-item-child-wardrope {
+        font-size: 30px;
+    }
+    .catalog-item-chair {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .catalog-item-child-wardrope {
+        text-align: center;
+    }
+    .catalog-description-child-wardrope {
+        text-align: center;
+    }
+ 
+    .catalog-main-container-chair__flex {
+        justify-content: center;
+        position: static;
+    }
+    .catalog-main-container-chair {
+        justify-content: space-around;
+    }
+    .catalog-cutting-container {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .catalog-main-wardrope-container-img {
+        width: 70%;
+    }
+    .catalog-button-child-bedroom-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-button-kitchen {
+        margin: 30px 0px 0px;
+    }
+    .catalog-button-kitchen-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-button-bedroom-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-main-container-kitchen {
+        text-align: center;
+    }
+    .catalog-description {
+        width: 100%;
+        padding: 0;
+    }
+    .catalog-button-wrdrope-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-button-office-chair-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-main-container-wardrope-img {
+        width: 40%;
+    }
+    .catalog-button-office-chair {
+        margin-top: 20px 0px 0px;
+    }
+    .catalog-button-big-wardrope-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-button-cutting-appear {
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-button-living-room-appear {
+        display: flex;
+        justify-content: center;
+    }
+
+/* BLOCK ABOUT RESPONSIBILITY */
+    .block-responsibility {
+        margin-top: 540px;
+    }
+/* SWIPER ОТЗЫВЫ */
+    .slide-1-block-display {
+        display: none;
+    }
+    .slide-1-block-review {
+        width: 70%;
+    }
+    .slide-1-block-picture-position {
+        width: 70%;
+    }
+    .next-1,
+    .prev-1 {
+        margin: 0;
+    }
+    .slide-1-block-review__margin {
+        margin: 0;
+    }
+/* FOOTER */
+    footer {
+        flex-direction: column;
+        margin-top: 30px;
+        height: 750px;
+    }
+    .footer-1-block {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-1-block-item {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-1-block-text {
+        text-align: center;
+    }
+    .footer-block-map {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-2-block-display {
+        display: none;
+    }
+    .footer-2-block-adaptiv {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 680px){
+    .designer-furniture-left-block-item {
+        height: 100%;
+    }
+    .catalog-big-wardrope-container {
+        justify-content: space-around;
+    }
+    .catalog-main-container-wardrope {
+        justify-content: space-around;
+    }
+    .catalog-main-container-bedroom-child {
+        justify-content: space-around;
+    }
+    .catalog-button-kitchen {
+        width: 70%;
+    }
+    .catalog-button-child-bedrrom {
+        width: 70%;
+    }
+    .catalog-item-child-wardrope__padding {
+        padding: 0px;
+    }
+    .catalog-description-child-wardrope {
+        padding: 0px 20px;
+    }
+}
+@media (max-width: 580px){
+    .designer-furniture-right-block {
+        width: 90%;
+    }
+    .slider{
+        height: 450px;
+    }
+    .slider-list {
+        height: 450px;
+    }
+    .slide {
+        height: 450px;
+    }
+    .slider-arrows {
+        top: 235px;
+    }
+    .slide-picture__width {
+        width: 70%;
+    }
+    .slide-picture__width-100 {
+        width: 100%;
+    }
+    .catalog-main-container-bedroom-child-img {
+        width: 70%;
+    }
+    .catalog-main-container-wardrope-img {
+        width: 90%;
+    }
+    .catalog-main-wardrope-container-img {
+        width: 90%;
+    }
+    .catalog-main-container-bedroom-bed-img {
+        width: 100%;
+    }
+/* BLOCK ABOUT RESPONSIBILITY */
+    .block-responsibility-square-width > div {
+        width: 70%;
+    }
+}
+@media (max-width: 485px){
+    .designer-furniture-right-block-item {
+        line-height: normal;
+    }
+}
+@media (max-width: 480px){
+    .designer-furniture-right-block {
+        width: 90%;
+    }
+    .designer-furniture-left-block-under-item {
+        height: 100%;
+    }
+    .designer-furniture-right-block-item {
+        font-size: 20px;
+    }
+    .designer-furniture-left-block-underline {
+        border: none;
+    }
+    .slider{
+        height: 380px;
+    }
+    .slider-list {
+        height: 380px;
+    }
+    .slide {
+        height: 380px;
+    }
+    .slider-arrows {
+        top: 200px;
+    }
+    .catalog-main-wardrope-cutting-img {
+        width: 80%;
+    }
+    .catalog-main-container-kitchen {
+        width: 310px;
+    }
+    .catalog-big-wardrope-container  {
+        width: 310px;
+    }
+    .catalog-main-container-bedroom-child {
+        width: 310px;
+    }
+    .catalog-main-container-wardrope {
+        width: 310px;
+    }
+    .catalog-main-container-big-wardrope-width {
+        width: 310px;
+    }
+    .catalog-main-container-chair {
+        width: 310px;
+    }
+    .catalog-cutting-container {
+        width: 310px;
+    }
+    .catalog-cutting-container__position {
+        width: 310px;
+    }
+   
+/* BLOCK ABOUT RESPONSIBILITY */
+   .block-responsibility-square-width > div {
+        width: 90%;
+    }
+
+@media (max-width: 400px){
+    .designer-furniture-right-block-item {
+        height: 100px;
+    }
+/* FOOTER */
+    .footer-block-map {
+        width: 95%;
+    }
+    .map-img {
+        width: 90%;
+    }
+}
+}
+@media (max-width: 330px){
+    .designer-furniture-left-block-item {
+        font-size: 40px;
+        line-height: normal;
+    }
+    .catalog-main-container-kitchen {
+        width: 290px;
+    }
+    .catalog-big-wardrope-container  {
+        width: 290px;
+    }
+    .catalog-main-container-bedroom-child {
+        width: 290px;
+    }
+    .catalog-main-container-wardrope {
+        width: 290px;
+    }
+    .catalog-main-container-big-wardrope-width {
+        width: 290px;
+    }
+    .catalog-main-container-chair {
+        width: 290px;
+    }
+    .catalog-cutting-container {
+        width: 290px;
+    }
+    .catalog-cutting-container__position {
+        width: 290px;
+    }
+    
+}
+
