@@ -1,0 +1,184 @@
+.main-under-item {
+    margin-top: 66px;
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+}
+.main-under-item-underline {
+    border-bottom:  1px solid #D0D0D0;
+    height: 13px;
+    margin: 0 10px;
+}
+.kitcen-cards-main-flex-container {
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center;
+}
+.kitcen-cards-flex-container {
+    width: 40%;
+    display: flex;
+}
+.kitchen-cards-img {
+    width: 100px; 
+    height: 116px;
+    cursor: pointer;
+}
+.kitchen-cards-big-img {
+    margin-left: 10px;
+    width: 430px;
+}
+.kitchen-cards-big-img__height {
+    height: 99%;
+}
+.kitchen-cards-block-description {
+    width: 445px; 
+}
+.kitchen-cards-block-description-item {
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+.kitchen-cards-block-description-text {
+    padding-top: 6px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: #000000;
+}
+.kitchen-cards-block-short-description-block {
+    padding-top: 5px;
+    width: 70%; 
+
+}
+.kitchen-cards-block-short-description { 
+    padding-top: 20px;
+    display: flex; 
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3A3A3A;
+}
+.kitchen-cards-block-short-description__bold {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+                    /* УЗНАТЬ СТОИМОСТЬ  */
+.costs-main-flex-container {
+    display:flex; 
+    justify-content: center;
+    margin-top: 67px;
+}
+.costs-main-flex-container-block-1 {
+    width: 40%;
+}
+.costs-main-flex-container-block-2 { 
+    width: 445px;
+    height: 462px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+.costs-main-flex-container-block-2-mini-container {
+    height: 282px;
+    width: 75%;
+}
+.block-2-mini-container-item {
+    font-family: Palatino;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.block-2-mini-container-under-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2B2A28;
+}
+#wrong-number-text-2 {
+    color: red;
+    font-family: Montserrat;
+}
+.input__background {
+    background: #f8f8f8;
+}
+.button__margin-top {
+    margin-top: 30px;
+}
+@media (max-width: 1340px) {
+    .kitcen-cards-main-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .kitcen-cards-flex-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .kitchen-cards-block-description {
+        width: 98%;
+    }
+    .kitchen-cards-block-short-description-block {
+        width: 100%;
+    }
+    .kitchen-cards-block-description-item {
+        text-align: center;
+    }
+    .kitchen-cards-block-description-text {
+        text-align: center;
+    }
+    .costs-main-flex-container {
+        flex-direction: column;
+    }
+    .costs-main-flex-container-block-2 {
+        width: 100%;
+    }
+    .costs-main-flex-container-block-2-mini-container {
+        width: 40%;
+    }
+}
+@media (max-width: 660px){
+     .costs-main-flex-container-block-2-mini-container {
+        width: 70%;
+    }
+}
+@media (max-width: 530px) {
+    .kitcen-cards-flex-container {
+        width: 99%;
+        flex-direction: column;
+    }
+    .kitchen-cards-big-img__height{
+        width: 300px;
+    }
+    .kitcen-cards-flex-container__adaptiv {
+        display: flex;
+    }
+    .kitchen-cards-img {
+        padding: 0 5px;
+    }
+    .kitchen-cards-big-img {
+        width: 99%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 420px){
+    .kitchen-cards-img {
+        width: 90%;
+    }
+}
